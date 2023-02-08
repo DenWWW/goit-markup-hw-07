@@ -334,7 +334,7 @@
 							Increase the flow of customers and sales for your business with digital marketing & growth solutions.
 						</p>
 					</li>
-					<li class="footer-item footer-social">
+					<li class="footer-social">
 						<h3 class="footer-title-social">Social media</h3>
 						<ul class="footer-soc-list list">
 							<li class="footer-soc-item"
@@ -363,10 +363,21 @@
 							></li>
 						</ul>
 					</li>
+					<li class="footer-form">
+						<p class="input-form-title">Subscribe</p>
+						<form class="footer-input-form">
+							<input type="email" class="footer-input" name="subscribe-email" placeholder="E-mail" />
+							<button type="submit" class="footer-btn">Subscribe
+								<svg class="send-icon" width="24" height="20">
+							<use href="./images/icons.svg#icon-send"></use>
+						</svg></button>
+						</form>
+					</li>
 				</ul>
 			</div>
 		</footer>
-		<div class="backdrop" data-modal>
+
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal-close-btn" data-modal-close>
 					<svg class="modal-close-btn-icon" width="8" height="8">
@@ -374,8 +385,8 @@
 					</svg>
 				</button>
 				<p class="modal-title">Leave your contacts and we will call you back</p>
-				<form class="modal-form">
-					<label>
+				<form class="">
+					<label class="modal-form-field">
 						<span class="modal-label-name">Name</span>
 						<span class="input-wrap">
 							<input type="name" class="modal-input" name="user-name" required />
@@ -384,16 +395,16 @@
 							</svg>
 						</span>
 					</label>
-					<label>
+					<label class="modal-form-field">
 						<span class="modal-label-name">Phone</span>
 						<span class="input-wrap">
-							<input type="text" class="modal-input" name="user-phone" require />
+							<input type="tel" class="modal-input" name="user-phone" required />
 							<svg class="input-icon" width="12" height="12">
 								<use href="./images/icons.svg#icon-phone"></use>
 							</svg>
 						</span>
 					</label>
-					<label>
+					<label class="modal-form-field">
 						<span class="modal-label-name">Email</span>
 						<span class="input-wrap">
 							<input type="email" class="modal-input" name="user-email" required />
@@ -402,13 +413,19 @@
 							</svg>
 						</span>
 					</label>
-					<label>
+					<label class="modal-form-field textarea">
 						<span class="modal-label-name">Comment</span>
 						<textarea type="comment" class="modal-textarea" name="comment" placeholder="Text input"></textarea>
 					</label>
 					<div class="modal-check">
-						<input type="checkbox" name="privacy" id="privacy" value="true" class="input-check" required>
-						<label for="privacy" class="check-text">I accept the terms and conditions of the <a href="" class="link">Privacy Policy<a ></label>
+						<input type="checkbox" name="privacy" id="privacy" value="true" class="input-check visually-hidden" required>
+						<label for="privacy" class="check-text">
+							<span>
+								<svg class="check-icon" width="10" height="8">
+									<use href="./images/icons.svg#icon-check"></use>
+								</svg>
+							</span>
+							I accept the terms and conditions of the <a href="" class="check-link link">Privacy Policy<a ></label>
 					</div>
 					<button type="submit" class="modal-form-btn">Send</button>
 				</form>
